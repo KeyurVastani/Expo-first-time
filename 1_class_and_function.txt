@@ -19,7 +19,7 @@ const Welcome =props=>{
   return(
     <View >
       <Text 
-        {props.message}s //dgdgfgfhfhfghfhfghd
+        {props.message}s 
       </Text>
     </View>
   )
