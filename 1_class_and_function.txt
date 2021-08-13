@@ -1,0 +1,50 @@
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+
+class Welcome1 extends React.Component{
+  render(){
+    return(
+      <View >
+        <Text >
+          {this.props.message}
+        </Text>
+      </View>
+    )
+
+  }
+}
+const Welcome =props=>{
+  return(
+    <View >
+      <Text 
+        {props.message}s
+      </Text>
+    </View>
+  )
+}
+
+class App extends React.Component{
+  render(){
+    return (
+      <View style={styles.container}>
+      <Welcome message='Keyur Vasatni'/>
+      <Welcome1 message='BhikhuBhai Vasatni'/>  
+      </View>
+    );
+    }
+  }
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
+
+export default App
