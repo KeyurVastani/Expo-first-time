@@ -19,7 +19,7 @@ const Welcome =props=>{
   return(
     <View >
       <Text 
-        {props.message}s //dfdgfgdgdgds
+        {props.message}s // This is a new branch
       </Text>
     </View>
   )
